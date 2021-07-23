@@ -1,0 +1,32 @@
+.forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.forecast-icons {
+  height: 5rem;
+  width: 4rem;
+  filter: invert(90%);
+}
+
+.forecast > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .forecast {
+    gap: 1rem;
+  }
+
+  .forecast-icons {
+    height: 3rem;
+    width: 2rem;
+  }
+
+  .forecast > div {
+    gap: 0.3rem;
+  }
+}

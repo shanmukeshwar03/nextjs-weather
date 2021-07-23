@@ -1,0 +1,67 @@
+.temperature {
+  grid-area: temperature;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.location span:nth-child(2) {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.temperature h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.owf {
+  font-size: 5rem;
+}
+
+.temperature__changeloc {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.temperature__changeloc img {
+  filter: invert(100%);
+  height: 21px;
+  width: 21px;
+}
+
+@media screen and (max-width: 700px) {
+  .temperature {
+    gap: 1rem;
+  }
+
+  .location span:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .temperature h1 {
+    font-size: 1.6rem;
+  }
+
+  .owf {
+    font-size: 3rem;
+  }
+  .temperature__changeloc span {
+    font-size: 1rem;
+  }
+  .temperature__changeloc img {
+    height: 18px;
+    width: 18px;
+  }
+}
